@@ -1,4 +1,4 @@
-""" nombre = "Burrito Ortega"
+nombre = "Burrito Ortega"
 nombre = nombre.upper()
 print(nombre)
 c = 0
@@ -30,7 +30,7 @@ print(nombres.split("---"))  # ['juan', 'ana', 'pedro', 'luisa']
 
 cadena = "algo otro cosa techo"
 print(cadena.split()) # por defecto separa por espacio en blanco
-"""
+
 
 # slicing
 frase = "Las noches de otoño son frescas"
