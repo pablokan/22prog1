@@ -2,7 +2,7 @@ def inputChoice(msg, choices):
     valid = False
     while not valid:
         print("Opciones:", choices)
-        choice = input(msg)
+        choice = input(msg).upper()
         if choice in choices:
             valid = True
         else:
@@ -11,5 +11,5 @@ def inputChoice(msg, choices):
     return choice
 
 if __name__ == "__main__":
-    a = inputChoice("Ingrese opción: ", ["Si", "No"])
+    a = inputChoice("Ingrese opción: ", ["SI", "NO"])
     print(a)
