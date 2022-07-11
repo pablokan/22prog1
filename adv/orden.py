@@ -1,3 +1,6 @@
+from pprint import PrettyPrinter
+pp = PrettyPrinter(indent=4)
+
 li2 = [2, 1, 3]
 li2.sort()
 print(li2)
@@ -22,7 +25,7 @@ usuarios = [
 
 print(sorted(usuarios, key=lambda user: user['nombre'])) 
 print(sorted(usuarios, key=lambda user: user['apellido'])) 
-print(sorted(usuarios, key=lambda user: (user['apellido'], user['nombre'])))
+pp.pprint(sorted(usuarios, key=lambda user: (user['apellido'], user['nombre'])))
 
 L = ["cccc", "b", "dd", "aaa"]
 print ("Normal sort :", sorted(L))
