@@ -1,0 +1,6 @@
+Nombre, Fecha de nacimiento
+Juan, 01/01/2000
+Pedro, 02/02/2010
+Ana, 12/07/1999
+Iñaki, 27/06/2004
+María, 05/05/1980

@@ -1,0 +1,4 @@
+linea uno
+linea *dos
+*linea tres
+La cantidad de asteriscos es 2

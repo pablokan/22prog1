@@ -1,0 +1,4 @@
+nombre%edad%altura
+"Juan Kan"%31%1.70
+Anya Taylor-Joy%25%1.60
+Kan, Pablo%56%1.73
