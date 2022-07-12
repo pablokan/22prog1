@@ -1,3 +1,4 @@
+from curses import KEY_PREVIOUS
 from random import randint
 
 
@@ -8,11 +9,11 @@ def controlaCuatro(accion):
             m = randint(1000, 9999)
         elif accion == "pide":
             m = input("Tiro? ")    
-        m = list(set(list(str(m))))
+        m = list(dict.fromkeys(list(str(m))))
     return m
 
 m = controlaCuatro("genera")
-
+#print(f'Debugging ######## {m=} #########')
 acierto = False
 while not acierto:
     t = controlaCuatro("pide")
@@ -28,5 +29,5 @@ while not acierto:
     if bien == 4:
         acierto = True    
 
-print(f"{m}!!!!!!!")
+print(f"{''.join(m)}!!!!!!!")
 
