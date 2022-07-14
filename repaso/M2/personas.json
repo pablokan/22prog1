@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "Juan", 
+        "nombresHijos": ["Pedro", "Ana", "José"], 
+        "nombresPadres": {"Padre": "Juan", "Madre": "Maria"}
+    },
+    {
+        "nombre": "Luisa", 
+        "nombresHijos": ["Quico", "Pepita"], 
+        "nombresPadres": {"Padre": "Octavio", "Madre": "Sonia"}
+    },
+    {
+        "nombre": "Ernesto", 
+        "nombresHijos": ["Victoria"], 
+        "nombresPadres": {"Padre": null, "Madre": "Katia"}
+    }
+]
+

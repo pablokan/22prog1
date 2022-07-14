@@ -1,0 +1,7 @@
+# Estructura deseada de salida. Ejemplo:
+Pepita. Hijos:Anita, Quico. Madre: Lita.
+# Acá debajo vienen los datos que grabo
+# desde repaso_json.py
+Juan. Hijos: Pedro, Ana, José. Madre: Maria.
+Luisa. Hijos: Quico, Pepita. Madre: Sonia.
+Ernesto. Hijos: Victoria. Madre: Katia.
