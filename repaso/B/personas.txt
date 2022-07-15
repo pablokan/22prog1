@@ -1,0 +1,6 @@
+# Acá voy a guardar datos
+# de personas en el siguiente formato:
+# Ramiro. Hijos: Vania, Ivan. Madre: Anushka.
+Juan. Hijos: Pedro, Ana, José. Madre: Maria.
+Luisa. Hijos: Quico, Pepita. Madre: Sonia.
+Ernesto. Hijos: Victoria. Madre: Katia.
