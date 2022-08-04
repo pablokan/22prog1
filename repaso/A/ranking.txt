@@ -1,0 +1,7 @@
+Quico,11
+Ana,3
+Luis,7
+Pepe,23
+Josefa,5
+kan,4
+kan,6
