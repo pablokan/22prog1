@@ -1,0 +1,4 @@
+title,initialDate,lastDate,tags
+5 principios,20220704,20220801,politica~mundo~filokan
+accion y reaccion,20220804,20220804,filokan
+

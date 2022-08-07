@@ -1,0 +1,5 @@
+[
+{"nombre": "Juan", "activo": false, "status": null},
+{"nombre": "Ana", "activo": true, "status": "fine!"}
+]
+
