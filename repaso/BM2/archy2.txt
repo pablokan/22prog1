@@ -1,0 +1,6 @@
+Nombre: juan. Edad: 11
+Nombre: pedro. Edad: 22
+Nombre: ana. Edad: 33
+Nombre: juan. Edad: 11
+Nombre: pedro. Edad: 22
+Nombre: ana. Edad: 33

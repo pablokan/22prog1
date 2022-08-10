@@ -12,7 +12,7 @@ def controlaCuatro(accion):
 
 usuario = input("Jugador: ")
 m = controlaCuatro("genera")
-# print(f'######## {m=} #########')
+print(f'######## {m=} #########')
 acierto = False
 intentos = 0
 while not acierto:
