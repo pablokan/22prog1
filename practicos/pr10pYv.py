@@ -8,6 +8,8 @@ class Animal:
 
 
 class Puma(Animal):
+    nombre = "Pumas"
+    data = [(230, 6), (180, 4), (210, 7), (190, 10)]
     def __init__(self, id, peso, edad) -> None:
         super().__init__(id, peso)
         self.edad = edad
@@ -25,14 +27,16 @@ class Puma(Animal):
             return False
 
 class Venado(Animal):
-        def __init__(self, id, peso) -> None:
-            super().__init__(id, peso)
+    nombre = "Venados"
+    data = [(100, None), (130, None)]
+    def __init__(self, id, peso, _) -> None:
+        super().__init__(id, peso)
 
-        def salud(self):
-            if self.peso >= 120:
-                return "sano"
-            else:
-                return "enfermo"
+    def salud(self):
+        if self.peso >= 120:
+            return "sano"
+        else:
+            return "enfermo"
 
 
 class Jaula:
@@ -40,18 +44,12 @@ class Jaula:
         self.listaAnimales = []
         self.tipoAnimal = tipoAnimal
         for i in range(cantidad):
-            if tipoAnimal == "Pumas":
-                caracP = [(230, 6), (180, 4), (210, 7), (190, 10)]
-                a = Puma(i+1, *caracP[i])
-            elif tipoAnimal == "Venados":
-                caracV = [100, 130]
-                a = Venado(i+1, caracV[i])
-        
+            a = tipoAnimal(i+1, *tipoAnimal.data[i])
             self.listaAnimales.append(a)
 
     def getData(self) -> str:
         c = 0
-        print(f"\nJaula de {self.tipoAnimal}")
+        print(f"\nJaula de {self.tipoAnimal.nombre}")
         for animal in self.listaAnimales:
             print(f"# {animal.id} - {animal.salud()}")
             
@@ -62,11 +60,11 @@ class Jaula:
                     c += 1
         print(f"Cantidad de adultos: {c}")
 
-jaulaPumas1 = Jaula("Pumas", 4)
+jaulaPumas1 = Jaula(Puma, 4)
 jaulaPumas1.getData()
 jaulaPumas1.getCantidadPumasAdultos()
 
-jaulaVenados1 = Jaula("Venados", 2)
+jaulaVenados1 = Jaula(Venado, 2)
 jaulaVenados1.getData()
 
 # Salida
