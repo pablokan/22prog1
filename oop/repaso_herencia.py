@@ -1,19 +1,20 @@
 class Persona:
-    def __init__(self, nombre) -> None:
-        self.nombre = nombre
+    def __init__(self, n) -> None:
+        self.nombre = n
 
+    def getName(self):
+        return self.nombre
+    
 class Profesor(Persona):
-    def __init__(self, nombre, materia) -> None:
-        Persona.__init__(self, nombre) # si usa el nombre de la clase madre hay que poner self como parámetro
-        self.materia = materia
+    def __init__(self, n, m) -> None:
+        super().__init__(n)
+        self.materia = m
 
 class Alumno(Persona):
-    def __init__(self, nombre, promedio) -> None:
-        super().__init__(nombre) # si usa super no pone self
-        self.promedio = promedio
+    def __init__(self, n, p) -> None:
+        Persona.__init__(self, n)
+        self.promedio = p
 
-docente1 = Profesor("Pedro", "Inglés")
-alumno1 = Alumno("Cintia Red", 9.87)
-
-print(docente1.nombre)
-print(alumno1.nombre)
+docente = Profesor("Pablo", "Matemática")
+print(docente.nombre)
+print(docente.getName())

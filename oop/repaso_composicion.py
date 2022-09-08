@@ -1,11 +1,11 @@
 class Empleado:
-    def __init__(self, nombre) -> None:
-        self.nombre = nombre
+    def __init__(self, n) -> None:
+        self.nombre = n
 
 class Empresa:
     def __init__(self) -> None:
-        self.empleado = Empleado("José") # composición
-        #self.empleado = "José" SIN compo
+        self.empleado = Empleado("José")
+        #self.empleado = "José"
 
 empresa = Empresa()
 print(empresa.empleado.nombre)
