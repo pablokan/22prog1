@@ -37,6 +37,8 @@ class ArgHolder:
 a = ArgHolder(1, 2, three=3)
 print(a)
 
+
+# Frozen
 @dataclass(frozen=True)
 class Fija:
     nombre: str

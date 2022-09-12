@@ -22,6 +22,6 @@ members = [
     Person(name='Alice', age=30)
 ]
 
-sorted_members = sorted(members)
+sorted_members = sorted(members, reverse=True)
 for member in sorted_members:
     print(f'{member.name}(age={member.age})')
