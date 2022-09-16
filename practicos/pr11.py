@@ -79,23 +79,18 @@ class Netflix:
         return sum([p.duracion for p in self.listaPelis])/len(self.listaPelis)
 
     def actoresSeriesPelis(self):
-        listaActoresSeries = []
-        actoresSeries = [v.actores.split(",") for v in self.listaSeries]
-        for q in actoresSeries:
-            listaActoresSeries += q
-        #print(listaActoresSeries)
+        def getSet(listaVideos):
+            listaActores = []
+            for v in listaVideos:
+                listaActores += v.actores.split(",")
+            return set(listaActores)
 
-        listaActoresPelis = []
-        actoresPelis = [v.actores.split(",") for v in self.listaPelis]
-        for q in actoresPelis:
-            listaActoresPelis += q
-        #print(listaActoresPelis)
+        conjuntoActoresSeries = getSet(self.listaSeries)
+        conjuntoActoresPelis = getSet(self.listaPelis)
 
-        for a in listaActoresSeries:
-            for b in listaActoresPelis:
-                if a == b:
-                    print(a)
-
+        interseccion = conjuntoActoresPelis.intersection(conjuntoActoresSeries)
+        for actor in interseccion:
+            print(actor)
 
     def seriesMasLargas(self):
         for s in self.listaSeries:
