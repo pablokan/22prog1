@@ -7,9 +7,7 @@ class Ojo:
 @dataclass
 class Bicho:
     peso: int
-
-    def __post_init__(self):
-        self.ojo = Ojo("rojo")
+    ojo = Ojo("rojo")
 
 cucaracha = Bicho(10)
 print(cucaracha.ojo.color)
